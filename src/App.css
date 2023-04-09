@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;   
+}
+
+body {
+    /*
+    * var(--color-bg) is our css variable for background color.
+    * We will NOT be typing the variable names every time.
+    * Instead, we'll use the variables themselves.
+    */
+    background: var(--color-bg);
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.gradient__bg {
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 10% 4%, rgba(46, 133, 255, 0.84) 1%, rgba(92, 92, 246, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 10% 4%, rgba(46, 133, 255, 0.84) 1%, rgba(92, 92, 246, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 10% 4%, rgba(46, 133, 255, 0.84) 1%, rgba(92, 92, 246, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 10% 4%, rgba(46, 133, 255, 0.84) 1%, rgba(92, 92, 246, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 10% 4%, rgba(46, 133, 255, 0.84) 1%, rgba(92, 92, 246, 1) 100%);
+
+}
